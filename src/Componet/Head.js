@@ -6,8 +6,8 @@ import classes from './Head.module.css';
     return(
        <Fragment>
         <div className={classes.head}>
-            <div>
-                <h2>{title}</h2>
+            <div >
+                <h2 className={classes.title}>{title}</h2>
             </div>
 
         </div>
