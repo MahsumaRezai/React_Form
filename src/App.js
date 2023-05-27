@@ -1,10 +1,12 @@
- 
-const App = () => {
+import React, { Fragment } from 'react';
+import Head from  "./Componet/Head"
+function App() {
   return (
-    <div>
+    <Fragment>
+      <Head></Head>
 
-    </div>
+    </Fragment>
   );
-};
+}
 
 export default App;
