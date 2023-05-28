@@ -9,7 +9,7 @@ const Form = () => {
                     <label>Name</label>
                     <input type="text"></input>
                 </div>
-                <div>
+                <div className={classes.content_one}>
                     <label>Password</label>
                     <input type="password"></input>
                 </div>
