@@ -5,18 +5,30 @@ import Button from "./Button";
 const Form = () => {
     const [nameEnter, nameFun] = useState('');
     const [passwordEnter, passwordFun] = useState('');
+    const datasubmit = () => {
+        if (nameEnter.trim().length === 0 && passwordEnter.trim().length === 0) {
+            return;
+        }
+        if (passwordEnter.length <= 10) {
+            return;
+        }
+        console.log(nameEnter);
+        console.log(passwordEnter);
+        nameFun('');
+        passwordFun('')
+    }
+
+
     const datanameHandler = (event) => {
         nameFun(event.target.value);
-        console.log(nameEnter)
 
     }
     const datapasswordHandler = (event) => {
         passwordFun(event.target.value);
-        console.log(passwordEnter)
     }
     return (
         <Fragment>
-            <form className={classes.form}>
+            <form className={classes.form} onSubmit={datasubmit}>
                 <div className={classes.content}>
                     <label>Name</label>
                     <input type="text" onChange={datanameHandler}></input>
