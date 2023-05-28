@@ -1,0 +1,7 @@
+.card {
+    width: 40%;
+    height: 200px;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px gainsboro;
+    border-radius: 20px;
+}

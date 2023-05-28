@@ -1,14 +1,16 @@
-import { Fragment } from "react"
+import { Fragment } from "react";
+import classes from './Card.module.css';
+import Form from "./Form";
 
- const Card =()=>{
+const Card = () => {
     return (
         <Fragment>
-            <div>
-                <h2>fkfkfkfkf</h2>
+            <div className={classes.card}>
+                <Form></Form>
 
             </div>
         </Fragment>
     )
-    
- }
- export default Card
+
+}
+export default Card
