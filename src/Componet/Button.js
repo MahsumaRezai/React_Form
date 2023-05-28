@@ -3,7 +3,7 @@ import classes from  './Button.module.css'
 const Button = (porps) => {
     return (
         <Fragment>
-            <div >
+            <div  >
                 <button className={classes.btn}>{porps.children}</button>
             </div>
 

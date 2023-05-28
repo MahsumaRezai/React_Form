@@ -9,7 +9,7 @@ const Form = () => {
         if (nameEnter.trim().length === 0 && passwordEnter.trim().length === 0) {
             return;
         }
-        if (passwordEnter.length <= 10) {
+        if (+passwordEnter <= 10) {
             return;
         }
         console.log(nameEnter);
@@ -31,13 +31,13 @@ const Form = () => {
             <form className={classes.form} onSubmit={datasubmit}>
                 <div className={classes.content}>
                     <label>Name</label>
-                    <input type="text" onChange={datanameHandler}></input>
+                    <input type="text" onChange={datanameHandler} value={nameEnter} />
                 </div>
                 <div className={classes.content_one}>
                     <label>Password</label>
-                    <input type="password" onChange={datapasswordHandler}></input>
+                    <input type="password" onChange={datapasswordHandler} value={passwordEnter} />
                 </div>
-                <div>
+                <div className={classes.button}>
                     <Button>Login</Button>
                 </div>
             </form>
