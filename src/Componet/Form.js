@@ -1,16 +1,17 @@
-import { Fragment } from "react"
+import { Fragment } from "react";
+import classes from './Form.module.css'
 
 const Form = () => {
     return (
         <Fragment>
-            <form>
-                <div>
+            <form className={classes.form}>
+                <div className={classes.content}>
                     <label>Name</label>
-                    <input></input>
+                    <input type="text"></input>
                 </div>
                 <div>
-                    <label>Name</label>
-                    <input></input>
+                    <label>Password</label>
+                    <input type="password"></input>
                 </div>
             </form>
 
