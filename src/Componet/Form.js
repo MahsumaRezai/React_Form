@@ -12,8 +12,10 @@ const Form = () => {
         if (+passwordEnter <= 10) {
             return;
         }
-        console.log(nameEnter);
-        console.log(passwordEnter);
+        const namesave = nameEnter;
+        const password = passwordEnter;
+        alert(namesave);
+        alert(password)
         nameFun('');
         passwordFun('')
     }
