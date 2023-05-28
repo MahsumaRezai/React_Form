@@ -1,5 +1,6 @@
 import { Fragment } from "react";
-import classes from './Form.module.css'
+import classes from './Form.module.css'; 
+import Button from "./Button";
 
 const Form = () => {
     return (
@@ -12,6 +13,9 @@ const Form = () => {
                 <div className={classes.content_one}>
                     <label>Password</label>
                     <input type="password"></input>
+                </div>
+                <div>
+                    <Button>Login</Button>
                 </div>
             </form>
 
